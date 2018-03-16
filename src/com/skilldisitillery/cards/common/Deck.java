@@ -1,4 +1,4 @@
-package com.skilldisitillery.blackjack;
+package com.skilldisitillery.cards.common;
 
 import java.util.ArrayList;
 import java.util.Collections;

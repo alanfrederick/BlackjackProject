@@ -1,4 +1,4 @@
-package com.skilldisitillery.blackjack;
+package com.skilldisitillery.cards.common;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
