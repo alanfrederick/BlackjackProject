@@ -8,7 +8,7 @@ public class CardTest {
     }
     
     for(Suit s : Suit.values()){
-      System.out.println(s);
+    //  System.out.println(s);
     }
   }
 }
