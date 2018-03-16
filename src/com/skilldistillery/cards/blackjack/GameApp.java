@@ -1,7 +1,10 @@
-package com.skilldisitillery.cards.common;
+package com.skilldistillery.cards.blackjack;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+import com.skilldisitillery.cards.common.Card;
+import com.skilldisitillery.cards.common.Deck;
 
 public class GameApp {
   private static Deck deck = new Deck();
