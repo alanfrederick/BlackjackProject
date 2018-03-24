@@ -11,7 +11,7 @@ public class Hand {
   public void addCard(Card card) {
     hand.add(card);
   }
-// iterat
+// check card value
   public int getValueOfHand() {
     int value = 0;
     for (Card card : hand) {

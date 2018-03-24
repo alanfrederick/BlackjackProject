@@ -23,7 +23,8 @@ public class GameApp {
       invalidChoice();
     }
   }
-
+  
+// handle invalid input from user
   public static void invalidChoice() {
     System.out.println("Would you like to play blackjack, " + player.getName() + "?  1 Yes, 2 No");
     int choice = input.nextInt();
@@ -37,7 +38,6 @@ public class GameApp {
       System.out.println("Please choose a valid option!");
       invalidChoice();
     }
-    
   }
 
   public static void playRound() {
