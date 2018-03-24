@@ -1,5 +1,6 @@
 package com.skilldisitillery.cards.common;
 
+
 public class Card {
   private Rank rank;
   private Suit suit;

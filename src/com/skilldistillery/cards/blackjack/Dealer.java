@@ -30,4 +30,7 @@ public class Dealer {
     return hand;
   }
 
+  public void resetDeck() {
+    deck = new Deck();
+  }
 }
