@@ -23,8 +23,9 @@ public class GameApp {
       invalidChoice();
     }
   }
-  
-// handle invalid input from user
+
+  // handle invalid input from user
+  // TODO fix method to handle strings only takes ints currently
   public static void invalidChoice() {
     System.out.println("Would you like to play blackjack, " + player.getName() + "?  1 Yes, 2 No");
     int choice = input.nextInt();
@@ -33,8 +34,7 @@ public class GameApp {
     } else if (choice == 2) {
       System.out.println("Another time, then!");
       System.exit(0);
-    }
-    else {
+    } else {
       System.out.println("Please choose a valid option!");
       invalidChoice();
     }
@@ -69,12 +69,13 @@ public class GameApp {
       System.out.println("You won!");
       resetRound();
     } else if (dealer.getHand().getValueOfHand() > player.getHand().getValueOfHand()) {
-      System.out
-          .println("The dealer had: " + dealer.getHand() + " with a value of " + dealer.getHand().getValueOfHand());
+      System.out.println("The dealer had: " + dealer.getHand() + " with a value of " + dealer.getHand().getValueOfHand());
       System.out.println("You had : " + player.getHand() + " with a value of " + player.getHand().getValueOfHand());
       System.out.println("The dealer won!");
       resetRound();
     } else if (dealer.getHand().getValueOfHand() == player.getHand().getValueOfHand()) {
+      System.out.println("You had : " + player.getHand() + " with a value of " + player.getHand().getValueOfHand());
+      System.out.println("The dealer had: " + dealer.getHand() + " with a value of " + dealer.getHand().getValueOfHand());
       System.out.println("~~Push!~~");
       resetRound();
     }
