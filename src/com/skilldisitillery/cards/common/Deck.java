@@ -9,12 +9,15 @@ public class Deck {
   // create new deck list
   List<Card> deck = new ArrayList<>();
 
+  // check remaining deck size
   public int checkDeckSize() {
     return deck.size();
   }
 
+  // deck array for suits and ranks, iterate over arrays to create a
+  // new card object and add to the deck
+  
   public Deck() {
-    
     Suit[] suits = Suit.values();
     Rank[] ranks = Rank.values();
     for (Rank rank : ranks) {
@@ -23,7 +26,6 @@ public class Deck {
         deck.add(c);
       }
     }
-
   }
 
   // Remove top card from array and return result
@@ -34,7 +36,5 @@ public class Deck {
   // Shuffle the deck
   public void shuffleDeck() {
     Collections.shuffle(deck);
-
   }
-
 }
